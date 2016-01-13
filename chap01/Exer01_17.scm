@@ -1,0 +1,8 @@
+(define (double a)
+    (+ a a))
+(define (halve b)
+    (/ b 2))
+(define (* a b)
+    (cond ((= b 0) 0)
+        ((= (remainder b 2) 0) (* (double a) (halve b)))
+        (else (+ a (* a (- b 1))))))
