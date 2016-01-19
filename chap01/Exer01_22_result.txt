@@ -1,0 +1,106 @@
+(load "F:\\Programming\\Scheme\\SICP\\chap01\\Exer01_22_search_for_primes.scm")
+;Loading "exer01_22_search_for_primes.scm"...
+;  Loading "exer01_22.scm"...
+;    Loading "sect01_24_even_odd.scm"... done
+;    Loading "sect01_26_smallest_divisor.scm"... done
+;  ... done
+;  Loading "sect01_24_even_odd.scm"... done
+;  Loading "sect01_26_smallest_divisor.scm"... done
+;... done
+;Value: time-test
+
+(time-test 1000)
+
+1009 *** 0
+1013 *** 0
+1019 *** 0
+done!
+;Unspecified return value
+
+(time-test 10000)
+
+10007 *** 0
+10009 *** 0
+10037 *** 0
+done!
+;Unspecified return value
+
+(time-test 100000)
+
+100003 *** 0
+100019 *** 0
+100043 *** 0
+done!
+;Unspecified return value
+
+(time-test 1000000)
+
+1000003 *** 0
+1000033 *** 0
+1000037 *** 15
+done!
+;Unspecified return value
+
+(time-test 10000000)
+
+10000019 *** 0
+10000079 *** 0
+10000103 *** 15
+done!
+;Unspecified return value
+
+(time-test 100000000)
+
+100000007 *** 31
+100000037 *** 15
+100000039 *** 32
+done!
+;Unspecified return value
+
+(time-test 1000000000)
+
+1000000007 *** 78
+1000000009 *** 94
+1000000021 *** 93
+done!
+;Unspecified return value
+
+(time-test 10000000000)
+
+10000000019 *** 281
+10000000033 *** 312
+10000000061 *** 312
+done!
+;Unspecified return value
+
+(time-test 100000000000)
+
+100000000003 *** 967
+100000000019 *** 951
+100000000057 *** 983
+done!
+;Unspecified return value
+
+(time-test 1000000000000)
+
+1000000000039 *** 3105
+1000000000061 *** 3073
+1000000000063 *** 3105
+done!
+;Unspecified return value
+
+(time-test 10000000000000)
+
+10000000000037 *** 9687
+10000000000051 *** 9687
+10000000000099 *** 9672
+done!
+;Unspecified return value
+
+(time-test 100000000000000)
+
+100000000000031 *** 30607
+100000000000067 *** 30561
+100000000000097 *** 30623
+done!
+;Unspecified return value

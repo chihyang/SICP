@@ -1,0 +1,109 @@
+(load "Exer01_23.scm")
+;Loading "exer01_23.scm"...
+;  Loading "exer01_22.scm"...
+;    Loading "sect01_24_even_odd.scm"... done
+;    Loading "sect01_26_smallest_divisor.scm"... done
+;  ... done
+;  Loading "exer01_23_smallest_divisor.scm"...
+;    Loading "sect01_24_even_odd.scm"... done
+;  ... done
+;  Loading "sect01_24_even_odd.scm"... done
+;... done
+;Value: time-test
+
+(time-test 1000)
+
+1009 *** 0
+1013 *** 0
+1019 *** 0
+done!
+;Unspecified return value
+
+(time-test 10000)
+
+10007 *** 0
+10009 *** 0
+10037 *** 0
+done!
+;Unspecified return value
+
+(time-test 100000)
+
+100003 *** 0
+100019 *** 0
+100043 *** 0
+done!
+;Unspecified return value
+
+(time-test 1000000)
+
+1000003 *** 0
+1000033 *** 15
+1000037 *** 0
+done!
+;Unspecified return value
+
+(time-test 10000000)
+
+10000019 *** 0
+10000079 *** 0
+10000103 *** 15
+done!
+;Unspecified return value
+
+(time-test 100000000)
+
+100000007 *** 31
+100000037 *** 16
+100000039 *** 47
+done!
+;Unspecified return value
+
+(time-test 1000000000)
+
+1000000007 *** 63
+1000000009 *** 62
+1000000021 *** 62
+done!
+;Unspecified return value
+
+(time-test 10000000000)
+
+10000000019 *** 234
+10000000033 *** 203
+10000000061 *** 218
+done!
+;Unspecified return value
+
+(time-test 100000000000)
+
+100000000003 *** 687
+100000000019 *** 687
+100000000057 *** 718
+done!
+;Unspecified return value
+
+(time-test 1000000000000)
+
+1000000000039 *** 2199
+1000000000061 *** 2199
+1000000000063 *** 2200
+done!
+;Unspecified return value
+
+(time-test 10000000000000)
+
+10000000000037 *** 7035
+10000000000051 *** 7020
+10000000000099 *** 7004
+done!
+;Unspecified return value
+
+(time-test 100000000000000)
+
+100000000000031 *** 22215
+100000000000067 *** 22574
+100000000000097 *** 22074
+done!
+;Unspecified return value
+
