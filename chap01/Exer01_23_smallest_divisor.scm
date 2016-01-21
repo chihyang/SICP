@@ -1,3 +1,4 @@
+(load "Sect01_17_square.scm")
 (load "Sect01_24_even_odd.scm")
 (define (fast_smallest-divisor n) (find-divisor n 2))
 
