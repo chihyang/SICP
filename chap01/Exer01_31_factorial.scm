@@ -1,0 +1,5 @@
+(load "Exer01_31_product.scm")
+(load "Sect01_31_identity.scm")
+(define (factorial n)
+  (define (next x) (+ 1 x))
+  (product identity 1 next n))
