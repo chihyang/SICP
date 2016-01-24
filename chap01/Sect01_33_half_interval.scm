@@ -1,5 +1,6 @@
 (load "Sect01_17_abs.scm")
 (load "Sect01_17_average.scm")
+(load "Sect01_33_close_enough.scm")
 (define (search f neg-point pos-point)
   (let ((midpoint (average neg-point pos-point)))
     (if (close-enough? neg-point pos-point)
