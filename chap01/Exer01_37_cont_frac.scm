@@ -1,0 +1,7 @@
+(define (cont-frac n d k)
+  (define (cont-frac-iter i)
+    (if (= i k)
+        (/ (n i) (d i))
+        (/ (n i)
+           (+ (d i) (cont-frac-iter (+ i 1))))))
+  (cont-frac-iter 1))
