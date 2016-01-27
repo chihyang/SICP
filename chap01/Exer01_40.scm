@@ -1,0 +1,8 @@
+(load "Sect01_17_square.scm")
+(load "Sect01_17_cube.scm")
+(load "Sect01_34_newton.scm")
+(define (cubic a b c)
+  (lambda (x) (+ (cube x)
+                 (* a (square x))
+                 (* b x)
+                 c)))
