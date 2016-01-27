@@ -1,0 +1,5 @@
+(load "Sect01_33_fixed_point.scm")
+(load "Sect01_34_average_damp.scm")
+(define (cube-root x)
+  (fixed-point (average-damp (lambda (y) (/ x (square y))))
+               1.0))
