@@ -1,0 +1,5 @@
+(load "Exer02_02_make_point.scm")
+(load "Exer02_02_print_point.scm")
+(define (make-segment x y) (cons x y))
+(define (start-segment l) (car l))
+(define (end-segment l) (cdr l))

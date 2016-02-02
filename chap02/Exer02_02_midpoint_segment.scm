@@ -1,0 +1,7 @@
+(load "Exer02_02_make_segment.scm")
+(load "Exer02_02_arithmetic_point.scm")
+(define (midpoint-segment l)
+  (let ((sum (add-point (start-segment l)
+                    (end-segment l))))
+    (make-point (/ (x-point sum) 2)
+                (/ (y-point sum) 2))))

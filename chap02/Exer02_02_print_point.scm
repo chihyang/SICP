@@ -1,0 +1,8 @@
+(load "Exer02_02_make_point.scm")
+(define (print-point p)
+  (newline)
+  (display "(")
+  (display (x-point p))
+  (display ",")
+  (display (y-point p))
+  (display ")"))
