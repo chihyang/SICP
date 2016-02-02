@@ -1,0 +1,6 @@
+(load "Exer02_01_make_rat.scm")
+(define (print-rat x)
+  (newline)
+  (display (numer x))
+  (display "/")
+  (display (denom x)))

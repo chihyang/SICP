@@ -1,0 +1,6 @@
+(load "../chap01/Sect01_25_gcd.scm")
+(define (make-rat n d)
+  (let ((g (gcd n d)))
+    (cons (/ n g) (/ d g))))
+(define (numer x) (car x))
+(define (denom x) (cdr x))
