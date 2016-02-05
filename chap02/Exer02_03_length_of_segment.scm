@@ -1,5 +1,5 @@
-(load "../chap01/Sect01_14_sum_of_squares.scm")
-(load "../chap01/Sect01_17_sqrt.scm")
+(load "Chap01_sum_of_squares.scm")
+(load "Chap01_sqrt.scm")
 (load "Exer02_02_make_point.scm")
 (load "Exer02_02_arithmetic_point.scm")
 (load "Exer02_02_make_segment.scm")
