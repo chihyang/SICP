@@ -1,0 +1,8 @@
+(define (cons a b)
+  (define (dispatch m)
+    (cond ((= m 0) (expt 2 a))
+          ((= m 1) (expt 3 b))
+          (else (error "Argument not 0 or 1: CONS" m))))
+  dispatch)
+(define (car z) (z 0))
+(define (cdr z) (z 1))
