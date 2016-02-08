@@ -5,3 +5,4 @@
 ((one s) z)
 ((two s) z)
 (((+ two two) s) z)
+(((* two two) s) z)
