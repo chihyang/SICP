@@ -1,0 +1,7 @@
+(load "Exer02_06.scm")
+(define s 1+)
+(define z 0)
+((zero s) z)
+((one s) z)
+((two s) z)
+(((+ two two) s) z)
