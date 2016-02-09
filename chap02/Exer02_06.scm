@@ -1,3 +1,4 @@
+;; church numerals
 (define zero (lambda (f) (lambda (x) x)))
 (define (add-1 n)
   (lambda (f) (lambda (x) (f ((n f) x)))))
@@ -9,3 +10,14 @@
 (define (* a b)
   (lambda (f) (lambda (x)
                 ((a (b f)) x))))
+(define (expt a b)
+  (b a))
+;; church bool
+(define tru (lambda (f) (lambda (x) f)))
+(define fls (lambda (f) (lambda (x) x)))
+(define (and a b)
+  ((a ((b tru) fls)) fls))
+(define (or a b)
+  ((a tru) ((b tru) fls)))
+(define (not a)
+  ((a fls) tru))
