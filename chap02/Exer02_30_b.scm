@@ -1,0 +1,7 @@
+(load "Exer02_30_a.scm")
+(define (total-weight mobile)
+  (cond ((null? mobile) 0)
+        ((not (pair? (right-branch mobile)))
+         (branch-structure mobile))
+        (else (+ (total-weight (left-branch mobile))
+                 (total-weight (right-branch mobile))))))
