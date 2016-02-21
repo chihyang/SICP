@@ -1,0 +1,6 @@
+(define (tree-map pred tree)
+  (map (lambda (sub-tree)
+         (if (pair? sub-tree)
+             (tree-map pred sub-tree)
+             (pred sub-tree)))
+       tree))
