@@ -55,3 +55,10 @@ Summerize the cases above, we get:
   (make-interval (min p1 p2 p3 p4)
                (max p1 p2 p3 p4)))
 ```
+
+## Notes on exercise 2.36.
+
+**Hints**: The key is to construct a list that takes first elements of each sublist and a list that takes
+the rest of the elements.
+
+**Reference**: See [here](https://sicp.readthedocs.org/en/latest/chp2/36.html) for details.
