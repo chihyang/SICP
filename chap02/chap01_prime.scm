@@ -1,0 +1,27 @@
+(define (expmod base exp m)
+  (cond ((= exp 0) 1)
+        ((even? exp)
+         (same_mod (expmod base (/ exp 2) m)
+                   1
+                   m))
+        (else
+         (remainder
+          (* base (expmod base (- exp 1) m))
+          m))))
+(define (same_mod a b n)
+  (if (and (= (remainder (square a) n)
+              (remainder b n))
+           (not (= a 1))
+           (not (= a (- n 1))))
+      0
+      (remainder (square a) n)))
+(define (miller-test n)
+  (define (try-it a)
+    (= (expmod a (- n 1) n) 1))
+  (try-it (+ 1 (random (- n 1)))))
+(define (miller-prime? n times)
+  (cond ((= times 0) true)
+        ((miller-test n) (miller-prime? n (- times 1)))
+        (else false)))
+(define (prime? n)
+  (miller-prime? n 10))
