@@ -3,6 +3,9 @@
   (accumulate
    append '() (map (lambda (pair) (expand pair n))
                    (unique-pair n))))
+(define (expand pair n)
+  (map (lambda (x) (cons x pair))
+       (enumerate-interval (+ (car pair) 1) n)))
 (define (sum-of-triple t)
   (accumulate + 0 t))
 (define (find-triples n s)
