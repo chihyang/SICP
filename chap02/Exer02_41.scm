@@ -1,0 +1,11 @@
+(load "Exer02_40.scm")
+(define (unique-triple n)
+  (accumulate
+   append '() (map (lambda (pair) (expand pair n))
+                   (unique-pair n))))
+(define (sum-of-triple t)
+  (accumulate + 0 t))
+(define (find-triples n s)
+  (filter (lambda (t) (or (< (sum-of-triple t) s)
+                          (= (sum-of-triple t) s)))
+          (unique-triple n)))
