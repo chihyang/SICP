@@ -1,0 +1,22 @@
+(load "Sect02_23_permutations.scm")
+(define (queens board-size)
+  (define (queen-cols k)
+    (if (= k 0)
+        (list empty-board)
+        (filter
+         (lambda (positions) (safe? k positions))
+         (flatmap
+          (lambda (rest-of-queens)
+            (map (lambda (new-row)
+                   (adjoin-position
+                    new-row k rest-of-queens))
+                 (enumerate-interval 1 board-size)))
+          (queen-cols (- k 1))))))
+  (queen-cols board-size))
+(define (adjoin-position row col board)
+  (if (null? board)
+      (list (list row col))
+      (append board (list (list row col)))))
+(define empty-board '())
+(define (safe? k rest-rows)
+  #t)
