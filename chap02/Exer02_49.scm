@@ -1,0 +1,20 @@
+(load "Sect02_24_segments_painter.scm")
+(define unit-vect1 (make-vect 0 0))
+(define unit-vect2 (make-vect 0 1))
+(define unit-vect3 (make-vect 1 1))
+(define unit-vect4 (make-vect 1 0))
+(define draw-frame
+  (segments->painter (list (make-segment unit-vect1 unit-vect2)
+                           (make-segment unit-vect2 unit-vect3)
+                           (make-segment unit-vect3 unit-vect4)
+                           (make-segment unit-vect4 unit-vect1))))
+(define draw-x
+  (segments->painter (list (make-segment unit-vect1 unit-vect3)
+                           (make-segment unit-vect2 unit-vect4))))
+(define draw-diamond
+  (segments->painter (list (make-segment (make-vect 0 0.5) (make-vect 0.5 1))
+                           (make-segment (make-vect 0.5 1) (make-vect 1 0.5))
+                           (make-segment (make-vect 1 0.5) (make-vect 0.5 0))
+                           (make-segment (make-vect 0.5 0) (make-vect 0 0.5)))))
+(define (wave segment-list)
+  (segments->painter segment-list))

@@ -1,0 +1,10 @@
+(define width 500)
+(define length 500)
+(define screen (make-graphics-device 'win32  width length 'standard))
+(define (draw-line p1 p2)
+  (graphics-draw-line screen
+                     (/ (xcor-vect p1) width)
+                     (/ (ycor-vect p1) length)
+                     (/ (xcor-vect p2) width)
+                     (/ (ycor-vect p2) length)))
+(define (draw-clear) (graphics-clear screen))

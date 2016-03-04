@@ -1,0 +1,6 @@
+(define (make-segment p1 p2)
+  (list p1 p2))
+(define (start-segment segment)
+  (car segment))
+(define (end-segment segment)
+  (cadr segment))
