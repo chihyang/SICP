@@ -1,3 +1,6 @@
+(load "Exer02_49.scm")
+(load "Exer02_51_2.scm")
+(load "Sect02_24_transform_operations.scm")
 (define wave2 (beside wave (flip-vert wave)))
 (define (flipped-pairs painter)
   (let ((painter2 (beside painter (flip-vert painter))))

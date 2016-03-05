@@ -1,4 +1,6 @@
 (load "Exer02_44.scm")
+(load "Exer02_50.scm")
+(load "Sect02_24_transform_operations.scm")
 (define (square-of-four tl tr bl br)
   (lambda (painter)
     (let ((top (beside (tl painter) (tr painter)))

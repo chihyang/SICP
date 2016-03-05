@@ -1,3 +1,5 @@
+(load "Exer02_51_2.scm")
+(load "Sect02_24_transform_operations.scm")
 (define (split op1 split2)
   (lambda (painter n)
     (if (= n 0)
