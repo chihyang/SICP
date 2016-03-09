@@ -62,3 +62,9 @@ Summerize the cases above, we get:
 the rest of the elements.
 
 **Reference**: See [here](https://sicp.readthedocs.org/en/latest/chp2/36.html) for details.
+
+## Notes on exercise 2.57.
+
+This exercise needs to use the dotted-tail notation introduced in exercise
+2.20. The last parameter of *make-sum* and *make-product* should be a list, so
+that they support the expressions that have more than two operands.
