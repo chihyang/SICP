@@ -10,10 +10,10 @@
 (define (product? x) (and (pair? x) (eq? (car x) '*)))
 (define (multiplier p) (cadr p))
 (define (multiplicand p) (caddr p))
-(define (make-sum init . items)
-  (fold-left make-sum-of-two
-             init
-             items))
+(define (make-sum . items)
+  (fold-right make-sum-of-two
+              0
+              items))
 (define (make-sum-of-two a1 a2)
   (cond ((=number? a1 0) a2)
         ((=number? a2 0) a1)
@@ -22,7 +22,11 @@
         ((null? a2) a1)
         (else (list '+ a1 a2))))
 (define (=number? exp num) (and (number? exp) (= exp num)))
-(define (make-product m1 m2)
+(define (make-product . items)
+  (fold-right make-product-of-two
+              1
+              items))
+(define (make-product-of-two m1 m2)
   (cond ((or (=number? m1 0) (=number? m2 0)) 0)
         ((=number? m1 1) m2)
         ((=number? m2 1) m1)
