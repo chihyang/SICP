@@ -41,6 +41,6 @@
   (if (null? pairs)
       '()
       (let ((pair (car pairs)))
-        (adjoin-set (make-leaf (car pair)  ;symbol
-                               (cdr pair)) ;frequency
+        (adjoin-set (make-leaf (car pair)   ;symbol
+                               (cadr pair)) ;frequency
                     (make-leaf-set (cdr pairs))))))
