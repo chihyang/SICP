@@ -68,3 +68,8 @@ the rest of the elements.
 This exercise needs to use the dotted-tail notation introduced in exercise
 2.20. The last parameter of *make-sum* and *make-product* should be a list, so
 that they support the expressions that have more than two operands.
+
+## Notes on exercise 2.72.
+
+a. We cannot assimilate the predicates _number?_ and _variable?_ because
+numbers and variables cannot be differentiated by operation tags.
