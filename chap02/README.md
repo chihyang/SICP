@@ -1,7 +1,7 @@
 ## Notes on exercise 2.11.
 
-Let `(a,b)` and `(c,d)` be two pairs of ordered numbers(i.e. `a < b` and `c < d`).
-There are nine cases about the signness of the endpoints:
+Let `(a,b)` and `(c,d)` be two pairs of ordered numbers(i.e. `a < b` and `c <
+d`).  There are nine cases about the signness of the endpoints:
 
 | No. | a  | b  | c  | d  |
 |-----|----|----|----|----|
@@ -58,8 +58,8 @@ Summerize the cases above, we get:
 
 ## Notes on exercise 2.36.
 
-**Hints**: The key is to construct a list that takes first elements of each sublist and a list that takes
-the rest of the elements.
+**Hints**: The key is to construct a list that takes first elements of each
+sublist and a list that takes the rest of the elements.
 
 **Reference**: See [here](https://sicp.readthedocs.org/en/latest/chp2/36.html) for details.
 
@@ -73,3 +73,8 @@ that they support the expressions that have more than two operands.
 
 a. We cannot assimilate the predicates _number?_ and _variable?_ because
 numbers and variables cannot be differentiated by operation tags.
+
+## Notes on exercise 2.79 and 2.80.
+
+The interface of these procedures needn't tag their results. Because the results
+are all _bool_.
