@@ -1,3 +1,4 @@
+(load "Sect02_43_data_directed.scm")
 (define (add x y) (apply-generic 'add x y))
 (define (sub x y) (apply-generic 'sub x y))
 (define (mul x y) (apply-generic 'mul x y))
@@ -84,6 +85,11 @@
        (lambda (x y) (tag (make-from-real-imag x y))))
   (put 'make-from-mag-ang 'complex
        (lambda (r a) (tag (make-from-mag-ang r a))))
+  ;; interface of the selectors, from exercise 2.77
+  (put 'real-part '(complex) real-part)
+  (put 'imag-part '(complex) imag-part)
+  (put 'magnitude '(complex) magnitude)
+  (put 'angle '(complex) angle)
   'done)
 (define (make-complex-from-real-imag x y)
   ((get 'make-from-real-imag 'complex) x y))

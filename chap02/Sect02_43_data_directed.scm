@@ -39,7 +39,7 @@
   (put 'imag-part '(polar) imag-part)
   (put 'magnitude '(polar) magnitude)
   (put 'angle '(polar) angle)
-  (put 'make-from-real-imag 'polar
+  (put 'make-from-real-imag 'rectangular
        (lambda (x y) (tag (make-from-real-imag x y))))
   (put 'make-from-mag-ang-polar 'polar
        (lambda (x y) (tag (make-from-mag-ang-polar r a))))

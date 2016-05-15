@@ -8,7 +8,3 @@
   (if (pair? datum)
       (cdr datum)
       (error "Bad tagged datum: CONTENTS" datum)))
-(define (rectangular? z)
-  (eq? (type-tag z) 'rectangular))
-(define (polar? z)
-  (eq? (type-tag z) 'polar))
