@@ -10,7 +10,8 @@
                     (a2 (cadr args)))
                 (if (eq? type1 type2)
                     ;; exercise 2.81 (c)
-                    (apply-generic op a1 a2)
+                    (error "No method for these types"
+                           (list op type-tags))
                     (let ((t1->t2 (get-coercion type1 type2))
                           (t2->t1 (get-coercion type2 type1)))
                       (cond (t1->t2
